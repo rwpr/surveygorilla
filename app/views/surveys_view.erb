@@ -1,0 +1,11 @@
+<h1> Welcome to Survey Gorilla!</h1>
+
+<h3> Check out the surveys.. </h3>
+	<% @survey.each do |survey| %>
+		<p><%= survey.name %></p>
+	<% end %>
+
+<form action="/surveys/new" method="post">
+  <input type="submit" value="Create survey">
+</form>
+
